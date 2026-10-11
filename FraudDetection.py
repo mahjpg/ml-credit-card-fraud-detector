@@ -42,6 +42,7 @@ print("random forest")
 print("classification report=",classification_report(y_test,y_pred_rf))
 print("confusion_matrix=",confusion_matrix(y_test,y_pred_rf))
 print("roc_auc=",roc_auc_score(y_test,y_pred_rf))
-
+df_sample = df.head(1000)
+df_sample.to_csv("creditcard_sample.csv", index=False)
 
 
